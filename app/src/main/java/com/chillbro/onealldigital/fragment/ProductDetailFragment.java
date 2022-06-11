@@ -236,8 +236,11 @@ public class ProductDetailFragment extends Fragment implements View.OnClickListe
             @Override
             public void onClick(View v) {
 
-                Intent intent =new Intent(getContext(),revire_recycle.class);
-                startActivity(intent);
+                revire_recycle revireRecycle=new revire_recycle();
+                MainActivity.fm.beginTransaction().replace(R.id.container, revireRecycle).addToBackStack(null).commit();
+
+//                Intent intent =new Intent(getContext(),revire_recycle.class);
+//                startActivity(intent);
             }
         });
 
