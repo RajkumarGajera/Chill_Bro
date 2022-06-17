@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "650454751255",
+    "firebase_url": "https://chill-bro-customer-default-rtdb.firebaseio.com",
+    "project_id": "chill-bro-customer",
+    "storage_bucket": "chill-bro-customer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650454751255:android:cc23b6539488d5bd3a2452",
+        "android_client_info": {
+          "package_name": "com.chillbro.onealldigital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650454751255-6ocib23t0gm4be9lnk1gn505b06c3pcq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chillbro.onealldigital",
+            "certificate_hash": "bcd02f873844a6246000962f0a0ac6bb2e65f1ac"
+          }
+        },
+        {
+          "client_id": "650454751255-s0i8r5k0hoskrhd4ga1l448fivtdqf28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chillbro.onealldigital",
+            "certificate_hash": "efda3ec81cb89ad4dd33ba6bdd4a9b3d3b4ae5da"
+          }
+        },
+        {
+          "client_id": "650454751255-pq06v9na5srm4kfngeplv5sr434j8qfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD0ERW7wI0qyAtvZitjloFvc6uWyVQ2iY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650454751255-pq06v9na5srm4kfngeplv5sr434j8qfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
