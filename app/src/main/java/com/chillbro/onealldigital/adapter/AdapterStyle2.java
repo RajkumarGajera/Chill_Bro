@@ -45,6 +45,7 @@ public class AdapterStyle2 extends RecyclerView.Adapter<AdapterStyle2.VideoHolde
         session = new Session(context);
     }
 
+
     @Override
     public int getItemCount() {
         return 1;

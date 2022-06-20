@@ -99,7 +99,7 @@
                         android:ellipsize="end"
                         android:fontFamily="@font/worksans_semibold"
                         android:padding="@dimen/dimen_5dp"
-                        android:text="2300"
+                        android:text=""
                         android:textColor="@color/black"
                         android:textSize="@dimen/_10ssp" />
 
@@ -132,8 +132,8 @@
 
             <ImageView
                 android:id="@+id/img_share"
-                android:layout_width="@dimen/_26sdp"
-                android:layout_height="@dimen/_26sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_299sdp"
                 android:layout_marginRight="@dimen/_216sdp"
                 app:layout_constraintEnd_toEndOf="@id/viewPager"
@@ -157,15 +157,15 @@
 
                     <ImageView
                         android:id="@+id/imgFav"
-                        android:layout_width="@dimen/_26sdp"
-                        android:layout_height="@dimen/_26sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
                         android:layout_centerInParent="true"
                         app:srcCompat="@drawable/ic_is_not_favorite" />
 
                     <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/lottieAnimationView"
-                        android:layout_width="@dimen/_26sdp"
-                        android:layout_height="@dimen/_26sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
                         app:lottie_autoPlay="false"
                         app:lottie_loop="false" />
 
@@ -189,9 +189,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="1dp"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:layout_marginTop="@dimen/_79sdp"
+                android:layout_marginTop="@dimen/_85sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/viewPager" />
 

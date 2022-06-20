@@ -44,8 +44,6 @@ public class SectionAdapter1 extends RecyclerView.Adapter<SectionAdapter1.Sectio
     @Override
     public void onBindViewHolder(SectionHolder holder1, final int position) {
 
-        if(Counter<2) {
-            Counter++;
             final Category section;
             section = sectionList.get(position);
             holder1.tvTitle.setText(section.getName());
@@ -84,7 +82,6 @@ public class SectionAdapter1 extends RecyclerView.Adapter<SectionAdapter1.Sectio
                 }
             });
         }
-    }
 
     @Override
     public SectionHolder onCreateViewHolder(ViewGroup parent, int viewType) {

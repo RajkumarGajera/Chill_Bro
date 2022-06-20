@@ -154,11 +154,18 @@ public class ProductListFragment extends Fragment {
             public void onSuccess(boolean result, String response) {
                 if (result) {
                     try {
+                        productArrayList = new ArrayList<>();
+                        System.out.println(response);
                         JSONObject objectbject = new JSONObject(response);
                         if (!objectbject.getBoolean(Constant.ERROR)) {
 
                             JSONObject object = new JSONObject(response);
-                            productArrayList = ApiConfig.GetProductList(object.getJSONArray(Constant.SECTIONS).getJSONObject(0).getJSONArray(Constant.PRODUCTS));
+                            JSONArray jsonArray = object.getJSONArray(Constant.DATA);
+                            System.out.println("hiiiiiiii"+jsonArray);
+                            productArrayList.addAll(ApiConfig.GetProductList(jsonArray));
+                            System.out.println(productArrayList);
+//                            productArrayList = ApiConfig.GetProductList(object.getJSONArray(Constant.SECTIONS).getJSONObject(0).getJSONArray(Constant.PRODUCTS));
+                            System.out.println(productArrayList);
                             mAdapter = new AdapterStyle1(requireContext(), activity, productArrayList, R.layout.lyt_product);
                             recyclerView.setAdapter(mAdapter);
                             mShimmerViewContainer.stopShimmer();

@@ -67,7 +67,6 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.SectionH
                     holder1.recyclerView.setAdapter(adapter3);
                     break;
             }
-            holder1.tvMore.setText("Sell All >>");
             holder1.tvMore.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -75,6 +74,8 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.SectionH
                     Fragment fragment = new ProductListFragment();
                     Bundle bundle = new Bundle();
                     bundle.putString(Constant.FROM, "section");
+                    System.out.println(section.getName());
+                    System.out.println(section.getId());
                     bundle.putString(Constant.NAME, section.getName());
                     bundle.putString(Constant.ID, section.getId());
                     fragment.setArguments(bundle);
